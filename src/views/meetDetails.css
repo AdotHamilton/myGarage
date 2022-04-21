@@ -1,0 +1,107 @@
+#meet_details_container {
+    width: 100%;
+    background-color: rgba(232, 232, 232, 0.908);
+    height: 90vh;
+    overflow-y: scroll;
+    border-radius: 5px;
+}
+#meet_details_header {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, rgb(71, 71, 71), white);
+    /* border-bottom: 1px solid rgba(128, 128, 128, 0.486); */
+}
+#meet_banner_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#meet_banner_container img {
+    height: 400px;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+#meet_header_bottom {
+    text-align: left;
+    min-width: 60%;
+    margin: auto;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.432);
+}
+#date {
+    color: rgb(255, 56, 56);
+}
+#meet_actions {
+    min-width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#meet_details_body {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 1em;
+}
+#meet_details_description {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.589);
+    padding: 1em;
+    margin: auto;
+    margin-right: 2em;
+    min-width: 45%;
+}
+#meet_details_description div {
+    display: flex;
+    align-items: center;
+}
+#meet_details_description div svg {
+    width: 30px;
+    height: 30px;
+    margin-right: .5em;
+}
+#meet_details_description .MuiAvatar-root {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: .5em;
+}
+#meet_maps_frame{
+    background-color: white;
+    min-width: 45%;
+    padding: 1%;
+    border-radius: 5px;
+    display: flex;
+    border:1px solid rgba(128, 128, 128, 0.589);
+    min-height: 400px;
+}
+#meet_maps_frame #map {
+    width: 100%;
+    min-height: 100%;
+    
+}
+
+
+@media screen and (max-width: 800px) {
+    #meet_header_bottom {
+        margin: 0;
+        padding-left: 1em; 
+    }
+    #meet_actions {
+        margin: 0;
+        padding-left: 1em;
+    }
+    #meet_details_description {
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+    #meet_details_body {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}

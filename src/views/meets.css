@@ -1,0 +1,85 @@
+#meets_container {
+    padding: 1%;
+    margin: auto;
+    width: 80vw;
+    background-color: rgba(232, 232, 232, 0.908);
+    border-radius: 5px;
+    height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#meets_action {
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+#meets_inner {
+    display: flex;
+    flex-direction: column;
+}
+#meets_grid {
+    margin: auto;
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.541);
+    border-radius: 5px;
+    align-content: flex-start;
+    overflow-y: scroll;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+}
+.meet_tile {
+    border-radius: 10px;
+    display: flex;
+    flex-grow: 2;
+    max-width: 250px;
+    flex-direction: column;
+    background-color: rgba(232, 232, 232, 0.908);
+}
+.tile_info {
+    padding: 1%;
+    border-radius: 5px;
+}
+.tile_img {
+    object-fit: contain;
+    background-color: rgb(39, 39, 39);
+    width: 250px;
+    height: 200px;
+}
+#meet_form {
+    display:none;
+}
+#meet_form.active {
+    display: flex;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.555);
+}
+#meet_form form {
+    padding: 2%;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 10vh;
+    margin-left: auto;
+    height: min-content;
+    margin-right: auto;
+}
+#meet_form input[name="date"] {
+    padding: 2%;
+    border-radius: 5px;
+    margin: auto;
+}
+#meet_form_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#meet_form_header svg:hover{
+    color: var(--accent-color)
+}

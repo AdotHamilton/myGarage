@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+*::-webkit-scrollbar{
+    width: 10px;
+}
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+
+}
+*::-webkit-scrollbar-thumb {
+    background-color:gray;
+    border-radius: 30px;
+}
+#dash_body {
+    height: 100vh;
+}
+.dash_main {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    justify-content: space-between;
+}
+.dash_main>div {
+    width: 100%;
+}
+.main_feed {
+    padding: 2em;
+    background-color: rgba(128, 128, 128, 0.024);
+    overflow-y: scroll;
+    height: 90vh;
+    min-width: 80%;
+    flex: 5;
+}
+.feed_post {
+    background-color: rgba(232, 232, 232, 0.908);
+    width: 60%;
+    margin: auto;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.feed_post .post_user {
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+
+.feed_post .interaction {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    color: rgb(74, 155, 249);
+
+}
+.post_image {
+    margin-top: 1em;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.744);
+}
+.post_info {
+    margin-left: 1em;
+}
+.post_content {
+    padding: 1%;
+}
+.post_info p {
+    color:rgba(73, 73, 73, 0.825);
+    font-size: small;
+}
+.feed_post p {
+    text-align: left;
+}
+.post_timestamp {
+    display: block;
+}
+#post_prompt {
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+#post_prompt .MuiAvatar-root {
+    width: 3em;
+    height: 3em;
+    margin-right: 0.5em;
+}
+#post_prompt label {
+    background-color: #676e7a4f;
+    padding: 10px;
+    flex: 1;
+    width: min-content;
+    border-radius: 30px;
+    font-size: larger;
+    color: white;
+}
+#post_prompt input {
+    background-color: transparent;
+    border: 0px solid;
+    font-size: large;
+    width: 100%;
+    cursor: pointer;
+}
+#post_prompt label:hover {
+    background-color: #36393f88;
+    cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+    .sidebar {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        padding: 0!important;
+    }
+    .sidebar_item {
+        height: 3em;
+    }
+    .feed_post {
+        width: 90%;
+    }
+    .sidebar_item h3 {
+        display: none;
+    }
+    .widget_bar {
+        display: none;
+    }
+}
