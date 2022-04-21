@@ -2,7 +2,8 @@
 The networking and business site for the automotive enthusiast.
 myGarage is made by enthusiasts, for enthusiasts.
 ------------------------------------------------
-##Codebase:
+Codebase:
+
 myGarage uses a React Front end, and utilizes axios to make data requests to the REST API
 The REST API/Backend is powered by Spring Boot. 
 The Backend implements: 
