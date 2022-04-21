@@ -1,0 +1,234 @@
+/* Begin Login page */
+.regBody {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364); 
+    background-image: url('../media/47844.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed ;
+    font-size: 100%;
+    min-height: 100vh;
+}
+#body {
+    padding: 1%;
+    height: 100vh;
+}
+#header_row {
+    position: inherit;
+}
+#login_container {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+    margin-top: 1vh;
+}
+#form_container {
+    background-color: #36393f;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 20%);
+    padding: 2%;
+    width: 40%;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+#reg_form_container {
+    background-color: #36393fdc;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px 0 rgb(0 0 0 / 20%);
+    padding: 1%;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+#error {
+    color: red;
+}
+#form_container_header > p {
+    color: gray;
+}
+#form_control {
+    width: 50%;
+    margin: auto;
+}
+.form_input {
+    width: 100%;
+    text-align: left;
+}
+#form_control .hidden {
+    display: none;
+}
+#form_control .hidden.active {
+    display: block;
+    text-align: left;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider::before {
+    position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;  
+}
+input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }  
+.multiple_input_container input {
+    border-radius: 5px!important;
+}
+.form_input input[type="number"] {
+    border-radius: 5px;
+}
+.form_input select::-webkit-scrollbar {
+    width: 8px;
+}
+.form_input select::-webkit-scrollbar-thumb {
+    background-color: #72767d;
+}
+.form_input input, .form_input select {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #72767d;
+    width: 100%;
+    font-size: larger;
+    color: white;
+}
+.form_input input:hover {
+    border: 2px solid white;
+}
+.form_input input {
+    border-radius: 30px;
+}
+.form_input input[type="submit"] {
+    background-color: #d84a4a;
+    font-size: 1.25em;
+    text-align: center;
+    width: 100%;
+
+}
+
+.form_input input[type="submit"]:hover {
+    background-color: #43c23fc5;
+    
+}
+.form_input h5{
+    color: #a9aaac;
+    text-transform: uppercase;
+    width: 100%;
+    display: inline-block;
+
+}
+.multiple_input_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.multiple_input_container .form_input {
+    width: 40%;
+}
+#state_dropdown {
+    width: 30%!important;
+}
+a {
+    color:#3d9cc5;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.error, #serverError {
+    margin-left: 1em;
+    display: block;
+    color: red!important;
+}
+
+.errorInput {
+    border: 3px solid red!important;
+}
+#loading {
+    display: none;
+}
+#loading .active {
+    display: block;
+}
+.form_input[type ='submit'] .disabled{
+    display: none;
+}
+@media screen and (max-width: 1000px) {
+    #background_container {
+        background-image: none;
+    }
+    #form_container {
+        width: 90%;
+        left: 5%;
+    }
+    #reg_form_container {
+        width: 80%;
+    }
+
+}
+@media screen and (max-width: 800px) {
+    #form_control {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .regBody {
+        font-size: 90%;
+    }
+
+    #login_container {
+        margin-top: 5%;
+    }
+    
+}

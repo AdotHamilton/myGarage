@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@500&display=swap');
+:root{
+    --accent-color: rgb(74, 155, 249);
+    --accent-color-hover: rgb(0, 124, 173);
+}
+.sidebar {
+    max-width: 15vw;
+    display: flex;
+    padding: 2%;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+#sidebar_header h1 {
+    margin-left: .5em;
+}
+.sidebar_item svg {
+    width: 32px;
+    height: 32px;
+    /* color: var(--accent-color) */
+}
+
+.sidebar_item:hover {
+    background-color: rgba(128, 128, 128, 0.368);
+    border-radius: 30px;
+    transition: color 100ms ease-out;
+    cursor: pointer;
+}
+a .sidebar_item {
+    display: block;
+}
+.sidebar_item{
+    justify-content: center;
+    color: white;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin-bottom: 1.5em;
+    
+}
+
+.sidebar_item a:hover {
+    color: var(--accent-color);
+    cursor:pointer;
+    text-decoration: none;
+}
+
+.sidebar_item.active {
+    color: var(--accent-color)!important;
+}

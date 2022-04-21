@@ -1,0 +1,37 @@
+#user_form_background {
+    display: none;
+}
+#user_form_background.active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align:middle;
+    background-color: rgba(128, 128, 128, 0.555);
+}
+#user_form {
+    background-color: rgb(223, 223, 223);
+    border-radius: 10px;
+    width: 60vw;
+    padding: 5%;
+}
+#user_form .form_input {
+    margin-bottom: 2em;
+}
+#user_form_header {
+    display: flex;
+    align-items: center;
+}
+#user_form_header svg:hover {
+    color: var(--accent-color);
+}
+@media screen and (max-width: 900px){
+    #user_form {
+        width: 90%;
+    }
+}

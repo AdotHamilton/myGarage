@@ -1,0 +1,85 @@
+#profile_container {
+    padding: 1%;
+    width: 90%;
+    background-color: rgba(232, 232, 232, 0.908);
+    margin: auto;
+    height: 90vh;
+    border-radius: 5px;
+}
+#profile_user {
+    width: 100%;
+    margin: auto;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#user_info {
+    display: flex;
+    align-items: center;
+}
+#profile_user .MuiAvatar-root {
+    height: 6em;
+    width: 6em;
+}
+#profile_user h1 {
+    margin-left: 1em;
+}
+#profile_content {
+    display: flex;
+    justify-content: space-between;
+    height: 75vh;
+}
+#user_left {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    text-align: center;
+    border-radius: 5px;
+}
+#user_left p {
+    text-align: left;
+}
+#profile_feed {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-height: 90%;
+    padding: 2%;
+    overflow-y: scroll;
+}
+#profile_feed .feed_post {
+    width: 80%;
+}
+
+.post_image {
+    width: 100%;
+    margin: auto;
+}
+.file_input_wrapper {
+    overflow: hidden;
+    position: relative;
+}
+.file_input_wrapper > input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#user_vehicles p {
+    display: flex;
+}
+@media screen and (max-width: 800px) {
+    #profile_container {
+        width: 100%;
+    }
+    #user_left {
+        display: none;
+    }
+    #profile_feed {
+        width: 100%;
+    }
+}

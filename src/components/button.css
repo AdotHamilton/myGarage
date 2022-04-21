@@ -1,0 +1,13 @@
+.simpleButton {
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.329);
+    border: none;
+    font-family: inherit;
+    font-weight: bold;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 250px;
+}
+.simpleButton:hover {
+    background-color: rgba(128, 128, 128, 0.705);
+}
